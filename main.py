@@ -1,9 +1,4 @@
-algo = input('Digite algo: ')
-print(f'O tipo primitivo desse valor é {type(algo)}')
-print(f'Só tem espaços? {algo.isspace()}')
-print(f'É um número? {algo.isnumeric()}')
-print(f'É alfabetico? {algo.isalpha()}')
-print(f'É alfanumerico? {algo.isalnum()}')
-print(f'Está em maiúsculas? {algo.isupper()}')
-print(f'Está em minúsculas? {algo.islower()}')
-print(f'Está capitalizada? {algo.istitle()}')
+n = int(input('Digite um número: '))
+print(f"""O drobro de {n} vale {n*2}.
+O triplo de {n} vale {n*3}.
+A raiz quadrada de {n} é igual a {n**(1/2):.2f}.""")
