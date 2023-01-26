@@ -1,9 +1,8 @@
-algo = input('Digite algo: ')
-print(f'O tipo primitivo desse valor é {type(algo)}')
-print(f'Só tem espaços? {algo.isspace()}')
-print(f'É um número? {algo.isnumeric()}')
-print(f'É alfabetico? {algo.isalpha()}')
-print(f'É alfanumerico? {algo.isalnum()}')
-print(f'Está em maiúsculas? {algo.isupper()}')
-print(f'Está em minúsculas? {algo.islower()}')
-print(f'Está capitalizada? {algo.istitle()}')
+distancia = float(input('Uma distância em metros: '))
+print(f'A media de {distancia}m corresponde a')
+print(f"""{distancia/1000}km
+{distancia/100}hm
+{distancia/10}dam
+{distancia*10:.0f}dm
+{distancia*100:.0f}cm
+{distancia*1000:.0f}mm""")
