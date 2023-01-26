@@ -1,9 +1,13 @@
-algo = input('Digite algo: ')
-print(f'O tipo primitivo desse valor é {type(algo)}')
-print(f'Só tem espaços? {algo.isspace()}')
-print(f'É um número? {algo.isnumeric()}')
-print(f'É alfabetico? {algo.isalpha()}')
-print(f'É alfanumerico? {algo.isalnum()}')
-print(f'Está em maiúsculas? {algo.isupper()}')
-print(f'Está em minúsculas? {algo.islower()}')
-print(f'Está capitalizada? {algo.istitle()}')
+numero = int(input('Digite um número para ver sua tabuada: '))
+print(f"""{'-'*12}
+{numero} x  1 = {numero*1}
+{numero} x  2 = {numero*2}
+{numero} x  3 = {numero*3}
+{numero} x  4 = {numero*4}
+{numero} x  5 = {numero*5}
+{numero} x  6 = {numero*6}
+{numero} x  7 = {numero*7}
+{numero} x  8 = {numero*8}
+{numero} x  9 = {numero*9}
+{numero} x 10 = {numero*10}
+{'-'*12}""")
