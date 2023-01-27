@@ -1,6 +1,7 @@
-from math import sin, cos, tan, radians
-angulo = float(input('Digite o ângulo que você deseja: '))
-angulo_radiano = radians(angulo)
-print(f"""O ângulo de {angulo:.1f} tem o SENO de {sin(angulo_radiano):.2f}
-O ângulo de {angulo:.1f} tem o COSSENO de {cos(angulo_radiano):.2f}
-O ângulo de {angulo:.1f} tem o TANGENTE de {tan(angulo_radiano):.2f}""")
+from random import choice
+a1 = str(input('Primeiro aluno: '))
+a2 = str(input('Segundo aluno: '))
+a3 = str(input('Terceiro aluno: '))
+a4 = str(input('Quarto aluno: '))
+alunos = [a1, a2, a3, a4]
+print(f'O aluno escolhido foi {choice(alunos)}')
