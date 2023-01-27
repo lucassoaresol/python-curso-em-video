@@ -1,9 +1,5 @@
-algo = input('Digite algo: ')
-print(f'O tipo primitivo desse valor é {type(algo)}')
-print(f'Só tem espaços? {algo.isspace()}')
-print(f'É um número? {algo.isnumeric()}')
-print(f'É alfabetico? {algo.isalpha()}')
-print(f'É alfanumerico? {algo.isalnum()}')
-print(f'Está em maiúsculas? {algo.isupper()}')
-print(f'Está em minúsculas? {algo.islower()}')
-print(f'Está capitalizada? {algo.istitle()}')
+largura = float(input('Largura da parede: '))
+altura = float(input('Altura da parede: '))
+area = largura*altura
+print(f"""Sua parede tem a dimensão de {largura}x{altura} e sua área é de {area}m².
+Para pintar essa parede, você precisará de {area/2}l de tinta.""")
