@@ -1,4 +1,3 @@
-temperatura_celsius = float(input('Informe a temperatura em ºC: '))
-temperatura_fahrenheit = (9/5)*temperatura_celsius + 32
-print(f'A temperatura de {temperatura_celsius:.1f}ºC corresponde a {temperatura_fahrenheit:.1f}ºF!')
-
+dias = int(input('Quantos dias alugados? '))
+km = float(input('Quantos Km rodados? '))
+print(f'0 total a pagar é de R${60*dias + 0.15*km:.2f}')
