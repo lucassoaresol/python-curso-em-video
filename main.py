@@ -1,3 +1,4 @@
-from math import trunc 
-valor = float(input('Digite um valor: '))
-print(f'O valor digitado foi {valor} e a sua porção inteira é {trunc(valor)}')
+from math import hypot
+cateto_oposto = float(input('Comprimento do cateto oposto: '))
+cateto_adjacente = float(input('Comprimento do cateto adjacente: '))
+print(f'A hipotenusa vai medir {hypot(cateto_oposto, cateto_adjacente):.2f}')
