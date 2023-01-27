@@ -1,9 +1,9 @@
-from random import shuffle
-a1 = str(input('Primeiro aluno: '))
-a2 = str(input('Segundo aluno: '))
-a3 = str(input('Terceiro aluno: '))
-a4 = str(input('Quarto aluno: '))
-alunos = [a1, a2, a3, a4]
-shuffle(alunos)
-print(f"""A ordem de apresentação será
-{alunos}""")
+nome = str(input('Digite seu nome completo: ')).strip()
+separa_nome = nome.split()
+primeiro_nome = separa_nome[0]
+letras = ''.join(separa_nome)
+print(f"""Analisando seu nome...
+Seu nome em maiúsculas é {nome.upper()}
+Seu nome em minúsculas é {nome.lower()}
+Seu nome tem ao todo {len(letras)} letras
+Seu primeiro nome é {primeiro_nome} e ele tem {len(primeiro_nome)} letras""")
