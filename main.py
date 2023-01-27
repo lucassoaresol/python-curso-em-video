@@ -1,4 +1,6 @@
-from math import hypot
-cateto_oposto = float(input('Comprimento do cateto oposto: '))
-cateto_adjacente = float(input('Comprimento do cateto adjacente: '))
-print(f'A hipotenusa vai medir {hypot(cateto_oposto, cateto_adjacente):.2f}')
+from math import sin, cos, tan, radians
+angulo = float(input('Digite o ângulo que você deseja: '))
+angulo_radiano = radians(angulo)
+print(f"""O ângulo de {angulo:.1f} tem o SENO de {sin(angulo_radiano):.2f}
+O ângulo de {angulo:.1f} tem o COSSENO de {cos(angulo_radiano):.2f}
+O ângulo de {angulo:.1f} tem o TANGENTE de {tan(angulo_radiano):.2f}""")
