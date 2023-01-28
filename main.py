@@ -1,4 +1,4 @@
-frase = str(input('Digite uma frase: ')).strip().upper()
-print(f"""A letra A aparece {frase.count('A')} vezes na frase
-A primeira letra A apareceu na posição {frase.find('A')+1}
-A última letra A apareceu na posição {frase.rfind('A')+1}""")
+nome = str(input('Digite seu nome completo: ')).strip().split()
+print(f"""Muito prazer em te conhecer!
+Seu primeiro nome é {nome[0]}
+Seu último nome é {nome[-1]}""")
