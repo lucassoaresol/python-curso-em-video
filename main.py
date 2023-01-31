@@ -1,14 +1,15 @@
-from random import randint
-from time import sleep
+from datetime import datetime
 
-computador = randint(0, 5)
-print("-=-" * 20)
-print("Vou pensar em um número entre 0 e 5. Tente adivinhar...")
-print("-=-" * 20)
-jogador = int(input("Em que número eu pensei? "))
-print("PROCESSANDO...")
-sleep(3)
-if jogador == computador:
-    print("PARABÉNS! Você conseguiu me vencer!")
-else:
-    print(f"GANHEI! Eu pensei no número {computador} e não no {jogador}!")
+expressao = " bom dia"
+hora = int(datetime.now().strftime("%H"))
+if hora >= 12 and hora < 18:
+    expressao = "a boa tarde"
+elif hora >= 18:
+    expressao = "a boa noite"
+velocidade = float(input("Qual é a velocidade atual do carro? "))
+if velocidade > 80:
+    print(
+        f"""MULTADO! Você excedeu o limite permitido que é de 80Km/h
+Você deve pagar uma multa de R${(velocidade-80)*7:.2f}!"""
+    )
+print(f"Tenha um{expressao}! Dirija com segurança!")
